@@ -19,3 +19,17 @@ with open("FirstCircuit1.json", "r", encoding="utf-8") as file:
 data = json.load(file)
 
 print(data) # Display the retrieved data.
+import json
+
+# ข้อมูลเปล่า
+blank_data = {
+    "users": [],
+    "messages": [],
+    "configurations": {}
+}
+
+# เขียนทับไฟล์ FirstCircuit1.json ด้วยข้อมูลเปล่า
+with open("FirstCircuit1.json", "w", encoding="utf-8") as file:
+    json.dump(blank_data, file, ensure_ascii=False, indent=4)
+
+print("ลบข้อมูลในไฟล์ FirstCircuit1.json เรียบร้อยแล้ว")
