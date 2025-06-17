@@ -1,2 +1,2 @@
-# EffectXerophyteOpportunity
-ข้อมูลเบาๆไปที่กระแทกได้
+# ownCpCn
+ฐานข้อมูล2241
