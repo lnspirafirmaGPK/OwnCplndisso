@@ -1,5 +1,8 @@
-{
-  "users": [],
-  "messages": [],
-  "configurations": {}
-} 
+import json
+
+# อ่านไฟล์ JSON
+with open("FirstCircuit1.json", "r", encoding="utf-8") as file:
+    data = json.load(file)
+
+# แสดงข้อมูลที่ดึงมาในรูปแบบที่สวยงาม
+print(json.dumps(data, indent=4, ensure_ascii=False))
